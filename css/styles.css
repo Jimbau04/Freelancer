@@ -13,6 +13,13 @@ html{
     scroll-snap-type: y mandatory;
 }
 
+.servicios,
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -23,6 +30,8 @@ body{
     background-image: linear-gradient(to top,#DFE9F3 0%, var(--blanco) 100%);
 
 }
+
+
 
 .sombra{
     -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
@@ -162,12 +171,7 @@ h1,h2,h3{
     align-items: flex-end;
 }
 
-.servicios,
-.navegacion-principal,
-.formulario{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}
+
 
 @media (min-width: 768px) {
     .servicios{
